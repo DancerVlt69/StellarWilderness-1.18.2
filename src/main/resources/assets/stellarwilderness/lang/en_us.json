@@ -1,5 +1,7 @@
 {
   "item.stellarwilderness.instructions_lens": "Instructions Lens",
+  "item.stellarwilderness.pozione_nebulosa": "Nebular Potion",
+  "item.stellarwilderness.nebulosa_bucket": "Nebular Bucket",
 
 
   "block.stellarwilderness.test_block": "Test Block",
@@ -7,5 +9,8 @@
 
 
   "itemGroup.stellartab": "Stellar Tab"
+
+
+
 
 }

@@ -36,8 +36,8 @@ public class ModFluids {
 
     public static final ForgeFlowingFluid.Properties NEBULOSA_PROPERTIES = new ForgeFlowingFluid.Properties(
             () -> NEBULOSA_FLUID.get(), () -> NEBULOSA_FLOWING.get(), FluidAttributes.builder(WATER_STILL_RL, WATER_FLOWING_RL)
-            .density(15).luminosity(5).viscosity(10).sound(SoundEvents.HONEY_DRINK).overlay(WATER_OVERLAY_RL)
-            .color(0xff00ff03)).slopeFindDistance(2).levelDecreasePerBlock(2)
+            .density(20).luminosity(5).viscosity(5).sound(SoundEvents.HONEY_DRINK).overlay(WATER_OVERLAY_RL)
+            .color(0xff553896)).slopeFindDistance(4).levelDecreasePerBlock(1)
             .block(() -> ModFluids.NEBULOSA_BLOCK.get()).bucket(() -> ModItems.NEBULOSA_BUCKET.get());
 
     public static final RegistryObject<LiquidBlock> NEBULOSA_BLOCK = ModBlocks.BLOCKS.register("nebulosa",
