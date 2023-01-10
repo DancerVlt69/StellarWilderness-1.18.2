@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "#a#",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "stellarwilderness:nebulosa_bucket"
+    },
+
+    "a": {
+      "item": "stellarwilderness:star_block"
+    }
+  },
+  "result": {
+    "item": "stellarwilderness:pozione_nebulosa"
+  }
+}

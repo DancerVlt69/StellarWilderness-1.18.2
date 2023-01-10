@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model":  "stellarwilderness:block/test_block" }
+  }
+}
