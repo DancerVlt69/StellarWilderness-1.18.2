@@ -13,10 +13,13 @@ buildscript {
 apply plugin: 'net.minecraftforge.gradle'
 apply plugin: 'org.parchmentmc.librarian.forgegradle'
 // Only edit below this line, the above code adds and enables the necessary things for Forge to be setup.
-apply plugin: 'eclipse'
+// apply plugin: 'eclipse' // <- eclipse is optional / only needed if you use the the Eclipse IDEA
 apply plugin: 'maven-publish'
 
-version = '0.0.1-1.18.1'
+// added to read (your) MC-Account data from an external file to save your personal data
+apply from: '/.env/mcAccountData.gradle'
+
+version = '0.0.1-1.18.2'
 group = 'net.domakingo.stellarwilderness' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = 'stellarwilderness'
 
@@ -45,13 +48,14 @@ minecraft {
     runs {
         client {
 
-            workingDirectory project.file('run')
+            // you can remove your personal account data if you have test it if it works for you!
+            args '--uuid', System.getProperty("uuID") // '3301f179-313f-4c9c-9ff6-d17f7a4115da'
+            args '--username', System.getProperty("userName") // 'Domakingoo'
 
+            workingDirectory project.file('run')
 
             property 'forge.logging.markers', 'REGISTRIES'
             property 'forge.logging.console.level', 'debug'
-                        args '--uuid', '3301f179-313f-4c9c-9ff6-d17f7a4115da'
-                        args '--username', 'Domakingoo'
 
             // Comma-separated list of namespaces to load gametests from. Empty = all namespaces.
             property 'forge.enabledGameTestNamespaces', 'stellarwilderness'
