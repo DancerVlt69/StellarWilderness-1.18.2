@@ -18,6 +18,8 @@ build
 .gradle
 
 # other
+# remove the # that GitHub ignore the ".env" folder for the future
+# .env
 eclipse
 run
 
