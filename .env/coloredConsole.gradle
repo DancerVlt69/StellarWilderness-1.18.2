@@ -1,3 +1,8 @@
+// Credits
+// Author: Nishant Srivastava
+// Web: https://crushingcode.nisrulz.com/posts/rainbow-console-logs-in-groovy/
+// GitHub: https://github.com/nisrulz/android-examples/tree/develop/ColoredConsoleLogs
+
 // Colored Console logs in Groovy
 def printlnWithColor(color, str) {
     // Map of ANSI Escape color codes
